@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "438970197521",
+    "firebase_url": "https://orderfood-f677c-default-rtdb.firebaseio.com",
+    "project_id": "orderfood-f677c",
+    "storage_bucket": "orderfood-f677c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438970197521:android:42db422d762474f678f3b0",
+        "android_client_info": {
+          "package_name": "com.example.project_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqI5I02f9p4GtRlyxFm6Eq8Y8X04ZBOaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438970197521:android:bbf960f171fcfd8d78f3b0",
+        "android_client_info": {
+          "package_name": "com.example.project_android_server"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438970197521-peira5vhqm2pekgebap73ta8h3se3v2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project_android_server",
+            "certificate_hash": "4bd9faab0c6db5c033b0a467f3ac85746fe1f1cc"
+          }
+        },
+        {
+          "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqI5I02f9p4GtRlyxFm6Eq8Y8X04ZBOaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438970197521:android:ebe4a92a622c5f9278f3b0",
+        "android_client_info": {
+          "package_name": "com.phuocnt.projectandroidserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqI5I02f9p4GtRlyxFm6Eq8Y8X04ZBOaQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438970197521-81uklg2f043redvmiopjf4itd0madup3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
