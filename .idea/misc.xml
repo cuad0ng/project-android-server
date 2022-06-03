@@ -14,10 +14,14 @@
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_food_list.xml" value="0.1" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_home.xml" value="0.2128623188405797" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_order_detail.xml" value="0.1" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_order_status.xml" value="0.21927083333333333" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_sign_in.xml" value="0.2128623188405797" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_tracking_order.xml" value="0.21927083333333333" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/add_food_item.xml" value="0.1" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/order_detail_layout.xml" value="0.21927083333333333" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/order_layout.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/update_order_layout.xml" value="0.10595358224016145" />
       </map>
     </option>
   </component>

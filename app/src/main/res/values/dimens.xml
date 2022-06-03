@@ -8,7 +8,6 @@
     <dimen name="dimen_8">8dp</dimen>
     <dimen name="dimen_5">5dp</dimen>
     <dimen name="dimen_4">4dp</dimen>
-    <dimen name="text_16">16sp</dimen>
     <dimen name="text_20">20sp</dimen>
     <dimen name="dimen_15">15dp</dimen>
 </resources>

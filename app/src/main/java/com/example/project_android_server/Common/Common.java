@@ -4,11 +4,15 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
+import com.example.project_android_server.Model.Request;
 import com.example.project_android_server.Model.User;
+import com.example.project_android_server.Remote.APIService;
+import com.example.project_android_server.Remote.RetrofitClient;
 
 public class Common {
     public static User currentUser;
-
+    public static Request currentRequest;
+    public static final String BASE_URL = "https://fcm.googleapis.com/";
     public static final String UPDATE = "Update";
     public static final String DELETE = "Delete";
     public static final int PICK_IMAGE_REQUEST = 71;
@@ -32,5 +36,8 @@ public class Common {
             }
         }
         return false;
+    }
+    public static APIService getFCMClient() {
+        return RetrofitClient.getClient(BASE_URL).create(APIService.class);
     }
 }

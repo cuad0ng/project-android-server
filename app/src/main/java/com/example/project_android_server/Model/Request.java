@@ -8,19 +8,29 @@ public class Request {
     private String address;
     private String total;
     private String status;
+    private String comment;
     private List<Order> foods; // list of food order
 
     public Request() {
 
     }
 
-    public Request(String phone, String name, String address, String total, List<Order> foods) {
+    public Request(String phone, String name, String address, String total, String status, String comment, List<Order> foods) {
         this.phone = phone;
         this.name = name;
         this.address = address;
         this.total = total;
+        this.status = status;
+        this.comment = comment;
         this.foods = foods;
-        this.status = "0"; // Default is 0, 0 diletakan, 1 dibungkus, 2 diantar.
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public String getStatus() {
