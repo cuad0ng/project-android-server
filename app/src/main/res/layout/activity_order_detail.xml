@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background"
+    android:background="#feb209"
     tools:context=".OrderDetail">
 
 
@@ -92,12 +92,14 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginBottom="20dp"
-            android:text="Detail"
-            android:textColor="@color/white"
+            android:text="Chi tiết đơn hàng"
+            android:textColor="@android:color/black"
             android:textSize="30sp"></TextView>
 
         <androidx.recyclerview.widget.RecyclerView

@@ -8,18 +8,31 @@
         <entry key="..\:/Users/craber/Downloads/Eat-It/ServerSide/EatItServer/app/src/main/res/layout/activity_sign_in.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/craber/Downloads/Eat-It/ServerSide/EatItServer/app/src/main/res/layout/app_bar_home.xml" value="0.1" />
         <entry key="..\:/Users/craber/Downloads/Eat-It/ServerSide/EatItServer/app/src/main/res/layout/nav_header_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/header_bg.xml" value="0.23" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/ic_access_time_black_24dp.xml" value="0.156" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/ic_attach_money_black_24dp.xml" value="0.156" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
-        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_food_list.xml" value="0.1" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/ic_launcher_background1.xml" value="0.23" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/ic_restaurant_black_24dp.xml" value="0.2085" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/receipt-24px.xml" value="0.2085" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/drawable/restaurant_menu-24px.xml" value="0.23" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_dashboard.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_food_list.xml" value="0.21603260869565216" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_home.xml" value="0.2128623188405797" />
-        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
-        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_order_detail.xml" value="0.1" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_manage_product.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_order_detail.xml" value="0.1634963768115942" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_order_status.xml" value="0.21927083333333333" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_sign_in.xml" value="0.2128623188405797" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/activity_tracking_order.xml" value="0.21927083333333333" />
-        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/add_food_item.xml" value="0.1" />
-        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/order_detail_layout.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/add_food_item.xml" value="0.21603260869565216" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/add_menu_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/app_bar_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/content_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/food_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/menu_item.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/nav_header_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/order_detail_layout.xml" value="0.4" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/order_layout.xml" value="0.21927083333333333" />
         <entry key="..\:/ute/mobile-programming/final/project-android-server/app/src/main/res/layout/update_order_layout.xml" value="0.10595358224016145" />
       </map>

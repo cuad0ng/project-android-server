@@ -10,12 +10,15 @@
     <application
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Quản lý nhà hàng"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        >
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
         <activity
             android:name=".OrderDetail"
             android:exported="false" />
@@ -37,13 +40,16 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
         <activity android:name=".FoodList" />
-        <service android:name=".Service.MyFirebaseMessaging"
+
+        <service
+            android:name=".Service.MyFirebaseMessaging"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".Service.MyFirebaseService"
+        <service
+            android:name=".Service.MyFirebaseService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

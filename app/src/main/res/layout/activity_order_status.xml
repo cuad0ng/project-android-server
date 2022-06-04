@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_launcher_background"
+    android:background="#feb209"
     android:padding="16dp"
     tools:context="com.example.project_android_server.OrderStatus">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listOrders"
-        android:background="@android:color/transparent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.recyclerview.widget.RecyclerView>
-
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"></androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>

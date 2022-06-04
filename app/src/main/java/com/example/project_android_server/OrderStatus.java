@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -50,6 +49,7 @@ public class OrderStatus extends AppCompatActivity {
     MaterialSpinner spinner;
     APIService mService;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +66,6 @@ public class OrderStatus extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-
         loadOrders();
 
     }
@@ -82,14 +81,27 @@ public class OrderStatus extends AppCompatActivity {
                 orderViewHolder.txtOrderAddress.setText(request.getAddress());
                 orderViewHolder.txtOrderPhone.setText(request.getPhone());
 
-                orderViewHolder.setItemClickListener((view, position, isLongClick) -> {
+                orderViewHolder.btnOrderDetail.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
+                        Common.currentRequest = request;
+                        orderDetail.putExtra("OrderId", adapter.getRef(i).getKey());
+                        startActivity(orderDetail);
+                    }
+                });
+                orderViewHolder.btnOrderUpdate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        showUpdateDialog(adapter.getRef(i).getKey(), adapter.getItem(i));
 
-                    Intent orderDetail = new Intent(OrderStatus.this, OrderDetail.class);
-                    Common.currentRequest = request;
-                    orderDetail.putExtra("OrderId", adapter.getRef(position).getKey());
-                    startActivity(orderDetail);
-
-
+                    }
+                });
+                orderViewHolder.btnOrderDelete.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        deleteOrder(adapter.getRef(i).getKey());
+                    }
                 });
             }
 
@@ -106,17 +118,6 @@ public class OrderStatus extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onContextItemSelected(@NonNull MenuItem item) {
-        if (item.getTitle().equals(Common.UPDATE)) {
-            showUpdateDialog(adapter.getRef(item.getOrder()).getKey(), adapter.getItem(item.getOrder()));
-        } else if (item.getTitle().equals(Common.DELETE)) {
-            deleteOrder(adapter.getRef(item.getOrder()).getKey());
-
-        }
-        return super.onContextItemSelected(item);
-    }
-
     private void deleteOrder(String key) {
         requests.child(key).removeValue();
         adapter.notifyDataSetChanged();
@@ -124,19 +125,18 @@ public class OrderStatus extends AppCompatActivity {
 
     private void showUpdateDialog(String key, Request item) {
         final AlertDialog.Builder alertDialog = new AlertDialog.Builder(OrderStatus.this);
-        alertDialog.setTitle("Update Order");
-        alertDialog.setMessage("Please choose status");
+        alertDialog.setTitle("Cập nhật trạng thái đơn hàng");
 
         LayoutInflater inflater = this.getLayoutInflater();
         final View view = inflater.inflate(R.layout.update_order_layout, null);
 
         spinner = (MaterialSpinner) view.findViewById(R.id.statusSpinner);
-        spinner.setItems("Placed", "On my Way", "Shipped");
+        spinner.setItems("Chờ lấy hàng", "Đang giao", "Đã giao");
 
         alertDialog.setView(view);
 
         final String localKey = key;
-        alertDialog.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
@@ -150,7 +150,7 @@ public class OrderStatus extends AppCompatActivity {
             }
         });
 
-        alertDialog.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+        alertDialog.setNegativeButton("HUỶ", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
@@ -169,7 +169,7 @@ public class OrderStatus extends AppCompatActivity {
                         for (DataSnapshot postSnapShot : dataSnapshot.getChildren()) {
                             Token tokens = postSnapShot.getValue(Token.class);
 
-                            Notification notification = new Notification("RESTAURANT", "Your Order" + localKey + "was updated");
+                            Notification notification = new Notification("RESTAURANT", "Đơn hàng " + localKey + " của bạn đã được cập nhật.");
                             Sender content = new Sender(tokens.getToken(), notification);
 
                             mService.sendNotification(content)
@@ -177,9 +177,9 @@ public class OrderStatus extends AppCompatActivity {
                                         @Override
                                         public void onResponse(Call<MyResponse> call, Response<MyResponse> response) {
                                             if (response.body().success == 1) {
-                                                Toast.makeText(OrderStatus.this, "Order was updated!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(OrderStatus.this, "Đơn hàng đã được cập nhật!", Toast.LENGTH_SHORT).show();
                                             } else {
-                                                Toast.makeText(OrderStatus.this, "Order was updated but failed to send notification!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(OrderStatus.this, "Đơn hàng đã cập nhật nhưng không gửi thông báo!", Toast.LENGTH_SHORT).show();
                                             }
                                         }
 

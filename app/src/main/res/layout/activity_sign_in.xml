@@ -4,63 +4,169 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/background2">
+    android:background="#feb209"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/dimen_8"
-        android:layout_marginEnd="@dimen/dimen_8"
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/editPhone"
-            android:hint="@string/phone_number"
-            android:textColorHint="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/text_20"
-            android:inputType="phone"
-            app:met_baseColor="@android:color/white"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="@android:color/white"
-            app:met_singleLineEllipsis="true"
-            />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/editPassword"
-            android:hint="@string/password"
-            android:textColorHint="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/text_20"
-            android:inputType="textPassword"
-            app:met_baseColor="@android:color/white"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_primaryColor="@android:color/white"
-            app:met_singleLineEllipsis="true"
-            />
-    </LinearLayout>
-
-    <info.hoang8f.widget.FButton
-        android:id="@+id/btnSignIn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="@dimen/dimen_8"
-        android:layout_marginEnd="@dimen/dimen_8"
-        android:layout_marginBottom="@dimen/dimen_8"
-        app:fButtonColor="@color/btnSignActive"
-        android:text="@string/Button2"
-        android:textColor="@android:color/white"
-        app:shadowColor="@android:color/black"
-        app:shadowEnabled="true"
-        app:shadowHeight="@dimen/dimen_5"
-        app:cornerRadius="@dimen/dimen_4"/>
+        android:layout_marginLeft="15.7dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15.7dp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="444dp"
+                android:background="@drawable/white_cueve_bg" />
+
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20.7dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="57.7dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="ĐĂNG NHẬP"
+                    android:textColor="#030303"
+                    android:textSize="31.3sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Số điện thoại"
+                    android:textColor="@android:color/black"
+                    android:textSize="13.3sp" />
+
+                <EditText
+                    android:id="@+id/editPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/grey_cursor_color"
+                    android:textSize="15sp"
+                    android:inputType="phone"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6.3dp"
+                    android:layout_marginRight="44.3dp"
+                    android:background="#d5d5d5" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30.3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Mật khẩu"
+                    android:textColor="@android:color/black"
+                    android:textSize="13.3sp" />
+
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.7dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:paddingRight="44.3dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textCursorDrawable="@drawable/grey_cursor_color"
+                    android:textSize="15sp"
+                    app:drawable_hide="@drawable/hide1"
+                    app:drawable_show="@drawable/show"
+                    app:tint_color="#d5d5d5"
+                    android:id="@+id/editPassword"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6.3dp"
+                    android:layout_marginRight="44.3dp"
+                    android:background="#d5d5d5" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="5dp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="30dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="29dp"
+                        android:layout_marginTop="50dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/btnSignIn1"
+                        android:layout_width="18.7dp"
+                        android:layout_height="15.3dp"
+                        android:src="@drawable/black_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>

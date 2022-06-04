@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">EatIt Restaurant</string>
-    <string name="image_selected">Image Selected</string>
-    <string name="slogan">We Serve</string>
-    <string name="Button2">SIGN IN</string>
+    <string name="image_selected">Đã chọn ảnh</string>
+    <string name="slogan">QUẢN TRỊ NHÀ HÀNG</string>
+    <string name="Button2">BẮT ĐẦU</string>
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

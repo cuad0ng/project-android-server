@@ -1,44 +1,29 @@
 package com.example.project_android_server.ViewHolder;
 
-import android.view.ContextMenu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.project_android_server.Common.Common;
-import com.example.project_android_server.Interface.ItemClickListener;
 import com.example.project_android_server.R;
 
-public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener,View.OnCreateContextMenuListener{
+public class MenuViewHolder extends RecyclerView.ViewHolder {
     public TextView txtMenuName;
     public ImageView imageView;
+    public Button btnUpdateCategory, btnDeleteCategory, btnDetailCategory;
 
-    private ItemClickListener itemClickListener;
-
-    public  MenuViewHolder(View itemView) {
+    public MenuViewHolder(View itemView) {
         super(itemView);
 
-        txtMenuName = (TextView)itemView.findViewById(R.id.menu_name);
-        imageView = (ImageView)itemView.findViewById(R.id.menu_image);
+        txtMenuName = (TextView) itemView.findViewById(R.id.menu_name);
+        imageView = (ImageView) itemView.findViewById(R.id.menu_image);
+        btnUpdateCategory = itemView.findViewById(R.id.menu_update);
+        btnDeleteCategory = itemView.findViewById(R.id.menu_delete);
+        btnDetailCategory = itemView.findViewById(R.id.menu_detail);
 
-        itemView.setOnCreateContextMenuListener(this);
-        itemView.setOnClickListener(this);
-    }
 
-    public void setItemClickListener(ItemClickListener itemClickListener) {
-        this.itemClickListener = itemClickListener;
-    }
-    @Override
-    public void onClick(View view) {
-        itemClickListener.onClick(view,getAdapterPosition(),false);
     }
 
-    @Override
-    public void onCreateContextMenu(ContextMenu contextMenu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        contextMenu.setHeaderTitle("Select The Action");
-        contextMenu.add(0,0,getAdapterPosition(), Common.UPDATE);
-        contextMenu.add(0,1,getAdapterPosition(), Common.DELETE);
-    }
 }

@@ -2,75 +2,63 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
     app:cardElevation="4dp">
 
     <LinearLayout
-        android:layout_margin="20dp"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
 
-        <com.rengwuxian.materialedittext.MaterialEditText
+        <EditText
             android:id="@+id/editName"
-            android:hint="Name"
-            android:textColorHint="@color/colorPrimary"
-            android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-            android:textSize="34sp"
-            app:met_baseColor="@color/colorPrimary"
-            app:met_floatingLabel="highlight"
-            app:met_primaryColor="@color/colorPrimary"
-            app:met_singleLineEllipsis="true">
-        </com.rengwuxian.materialedittext.MaterialEditText>
+            android:hint="Tên danh mục"
+            android:textSize="20sp"></EditText>
 
         <LinearLayout
-            android:weightSum="2"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
-            <info.hoang8f.widget.FButton
+            <Button
                 android:id="@+id/btnSelect"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                app:fButtonColor="@color/colorPrimary"
-                android:text="Select"
-                android:textColor="@android:color/white"
-                app:shadowColor="@android:color/black"
-                app:shadowEnabled="true"
-                app:shadowHeight="5dp"
-                app:cornerRadius="4dp"/>
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:text="Chọn ảnh"
+                android:textColor="@android:color/white" />
 
-            <info.hoang8f.widget.FButton
+            <Button
                 android:id="@+id/btnUpload"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                app:fButtonColor="@color/colorPrimary"
-                android:text="Upload"
-                android:textColor="@android:color/white"
-                app:shadowColor="@android:color/black"
-                app:shadowEnabled="true"
-                app:shadowHeight="5dp"
-                app:cornerRadius="4dp"/>
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:text="Tải lên"
+                android:textColor="@android:color/white" />
 
 
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/imgUploadCategory"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"></ImageView>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
